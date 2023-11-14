@@ -47,7 +47,7 @@ library(rnaturalearth)
 7.  Render the document and fix any errors.
 
 ```{r}
-#| eval: false
+#| eval: true
  
 gapminder_2007 <-  gapminder |> 
   filter(year == 2007) 
@@ -77,8 +77,7 @@ gapminder_2007 <-  gapminder |>
 ```{r}
 #| eval: true
 
-gapminder_summary_2007 <- gapminder |> 
-  filter (year == 2007) |> 
+gapminder_summary_2007 <- gapminder_2007 |> 
   group_by(continent) |> 
   summarise(
     count = n(),
