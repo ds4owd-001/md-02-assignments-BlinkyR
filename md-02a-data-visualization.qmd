@@ -73,7 +73,6 @@ gapminder_2007 <-  gapminder |>
 
 8.  Render the document and fix any errors.
 
-
 ```{r}
 #| eval: true
 
